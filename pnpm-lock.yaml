@@ -120,6 +120,12 @@ importers:
       '@design-sdk/figma-url':
         specifier: ^0.0.53
         version: 0.0.53
+      '@reflect-ui/core':
+        specifier: ^0.0.5
+        version: 0.0.5(@reflect-ui/cg@0.1.1)
+      '@reflect-ui/namings':
+        specifier: ^0.0.3
+        version: 0.0.3
       '@reflect-ui/uiutils':
         specifier: 0.1.2-1
         version: 0.1.2-1
