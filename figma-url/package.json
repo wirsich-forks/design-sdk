@@ -1,28 +1,28 @@
 {
-    "name": "@design-sdk/figma-url",
-    "version": "0.0.53",
-    "description": "Figma url utils for sharing & embeding and url inspection",
-    "license": "MIT",
-    "private": false,
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
-    "homepage": "https://github.com/gridaco/design-sdk",
-    "repository": "https://github.com/gridaco/design-sdk",
-    "authors": [
-        "grida.co",
-        "softmarshmallow <universe@grida.co>"
-    ],
-    "scripts": {
-        "clean": "rimraf dist",
-        "build": "tsc",
-        "test": "jest"
-    },
-    "files": [
-        "dist",
-        "README",
-        "LICENSE"
-    ],
-    "publishConfig": {
-        "access": "public"
-    }
+  "name": "@design-sdk/figma-url",
+  "version": "0.0.54",
+  "description": "Figma url utils for sharing & embeding and url inspection",
+  "license": "MIT",
+  "private": false,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "homepage": "https://github.com/gridaco/design-sdk",
+  "repository": "https://github.com/gridaco/design-sdk",
+  "authors": [
+    "grida.co",
+    "softmarshmallow <universe@grida.co>"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "files": [
+    "dist",
+    "README",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }

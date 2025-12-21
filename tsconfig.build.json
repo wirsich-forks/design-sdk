@@ -7,6 +7,7 @@
     "esModuleInterop": true,
     "sourceMap": false,
     "experimentalDecorators": true,
-    "noUnusedLocals": false
+    "noUnusedLocals": false,
+    "skipLibCheck": true
   }
 }
