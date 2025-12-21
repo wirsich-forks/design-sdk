@@ -1,3 +1,10 @@
 {
-  "extends": "../tsconfig.json"
+  "extends": "../tsconfig.json",
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.test.ts",
+    "**/*.spec.ts",
+    "query-node.test.ts"
+  ]
 }
