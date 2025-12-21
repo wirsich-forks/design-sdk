@@ -357,15 +357,6 @@ importers:
 
   sketch: {}
 
-  sketch-node-conversion:
-    dependencies:
-      '@design-sdk/sketch-types':
-        specifier: ^0.0.53
-        version: 0.0.53
-      '@reflect-ui/core':
-        specifier: ^0.0.5
-        version: 0.0.5(@reflect-ui/cg@0.1.1)
-
   sketch-types: {}
 
   universal:
@@ -585,9 +576,6 @@ packages:
 
   '@design-sdk/flags@0.0.53':
     resolution: {integrity: sha512-WpHHO3LBFeYNbP5o9dLZv7qo0l0rHFF3fu6DGR1/rp8py44f29NYr8GJQhfkUni/PAJfjFsGZEVi9RXVypVveQ==}
-
-  '@design-sdk/sketch-types@0.0.53':
-    resolution: {integrity: sha512-xbbLksejE8UI5OWHP+/NLdtkFUhc1QR7g7VBODNNbAxY7Mw1T1bbt6A6YvIXCVne7AAkSeDlcBbP3GY3mnDG+w==}
 
   '@design-sdk/sketch@0.0.53':
     resolution: {integrity: sha512-2Lw3uDxvTObhxVrppKQLzAvxuMRIVykDA7wUqq1MTfsOVMhbgE83MYy91tqA9an2vViYWqVSG0n7YSUmCdyi/w==}
@@ -2721,8 +2709,6 @@ snapshots:
   '@design-sdk/flags@0.0.53':
     dependencies:
       '@design-sdk/core-flags-dashdash': 0.0.53
-
-  '@design-sdk/sketch-types@0.0.53': {}
 
   '@design-sdk/sketch@0.0.53': {}
 
