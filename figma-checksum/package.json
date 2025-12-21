@@ -12,6 +12,8 @@
   },
   "dependencies": {
     "@design-sdk/figma": "^0.0.53",
+    "@design-sdk/figma-auth-store": "^0.0.53",
+    "@design-sdk/figma-remote-api": "^0.0.53",
     "nanoid": "^3.1.30"
   },
   "devDependencies": {
