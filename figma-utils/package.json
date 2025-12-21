@@ -12,7 +12,9 @@
   ],
   "scripts": {
     "clean": "rimraf dist",
-    "build": "tsc"
+    "dev": "tsup --watch",
+    "build": "tsup lib/index.ts",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@design-sdk/figma-types": "^0.0.53",

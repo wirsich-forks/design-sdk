@@ -12,12 +12,13 @@ export interface IReflectChildrenMixin
 }
 export abstract class ReflectChildrenMixin
   extends ReflectConstraintMixin
-  implements IReflectChildrenMixin {
-  children: Array<ReflectSceneNode>;
+  implements IReflectChildrenMixin
+{
+  declare children: Array<ReflectSceneNode>;
   get constraintableChildren(): Array<ReflectConstraintMixin> {
     return filterConstraintableChildren(this);
   }
-  isRelative?: boolean;
+  declare isRelative?: boolean;
 
   get mostUsedColor(): ReadonlyArray<types.RGBAF> {
     throw "not implemented";

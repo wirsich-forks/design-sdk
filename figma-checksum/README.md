@@ -7,7 +7,7 @@ Figma file key checksum for verifying user provided figma file key to match via 
 **Installation**
 
 ```sh
-yarn add @design-sdk/figma-checksum
+pnpm add @design-sdk/figma-checksum
 ```
 
 **Default use**

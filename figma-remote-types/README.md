@@ -5,7 +5,7 @@
 ## Installation
 
 ```sh
-yarn add @design-sdk/figma-remote-types
+pnpm add @design-sdk/figma-remote-types
 
 # or with npm
 npm i @design-sdk/figma-remote-types

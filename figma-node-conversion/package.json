@@ -1,45 +1,46 @@
 {
-    "name": "@design-sdk/figma-node-conversion",
-    "description": "convert figma nodes into a universal version - to reflect design nodes",
-    "version": "0.0.53",
-    "private": false,
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
-    "keywords": [
-        "figma",
-        "design",
-        "converter"
-    ],
-    "authors": [
-        "grida.co",
-        "softmarshmallow <universe@grida.co>"
-    ],
-    "scripts": {
-        "clean": "rimraf dist",
-        "build": "tsc",
-        "test": "jest"
-    },
-    "dependencies": {
-        "@design-sdk/figma-node": "^0.0.53",
-        "@design-sdk/figma-types": "^0.0.53",
-        "@design-sdk/figma-utils": "^0.0.53",
-        "@design-sdk/flags": "^0.0.53",
-        "@reflect-ui/cg": "^0.0.5",
-        "@reflect-ui/core": "^0.0.5",
-        "@reflect-ui/font-utils": "^0.0.5"
-    },
-    "peerDependencies": {
-        "@design-sdk/figma-core": "^0.0.23"
-    },
-    "files": [
-        "dist",
-        "README",
-        "LICENSE"
-    ],
-    "publishConfig": {
-        "access": "public"
-    },
-    "devDependencies": {
-        "@types/node": "^18.6.2"
-    }
+  "name": "@design-sdk/figma-node-conversion",
+  "description": "convert figma nodes into a universal version - to reflect design nodes",
+  "version": "0.0.53",
+  "private": false,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "figma",
+    "design",
+    "converter"
+  ],
+  "authors": [
+    "grida.co",
+    "softmarshmallow <universe@grida.co>"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "dev": "tsup --watch",
+    "build": "tsup lib/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@design-sdk/figma-node": "^0.0.53",
+    "@design-sdk/figma-types": "^0.0.53",
+    "@design-sdk/figma-utils": "^0.0.53",
+    "@design-sdk/flags": "^0.0.53",
+    "@reflect-ui/cg": "^0.0.5",
+    "@reflect-ui/core": "^0.0.5",
+    "@reflect-ui/font-utils": "^0.0.5"
+  },
+  "peerDependencies": {
+    "@design-sdk/figma-core": "^0.0.23"
+  },
+  "files": [
+    "dist",
+    "README",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0"
+  }
 }

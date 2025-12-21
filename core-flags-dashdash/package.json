@@ -6,7 +6,8 @@
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
-    "build": "exit 0"
+    "build": "exit 0",
+    "typecheck": "echo 'no typescript sources' && exit 0"
   },
   "devDependencies": {
     "@types/node": "^16.10.3"

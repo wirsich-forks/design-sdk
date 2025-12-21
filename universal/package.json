@@ -1,32 +1,30 @@
 {
-    "name": "@design-sdk/universal",
-    "version": "0.0.53",
-    "private": false,
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
-    "authors": [
-        "grida.co",
-        "softmarshmallow <universe@grida.co>"
-    ],
-    "dependencies": {
-        "@design-sdk/core": "^0.0.53",
-        "@design-sdk/figma": "^0.0.53",
-        "@design-sdk/sketch": "^0.0.53",
-        "@design-sdk/vanilla": "^0.0.53"
-    },
-    "scripts": {
-        "clean": "rimraf dist",
-        "build": "tsc"
-    },
-    "files": [
-        "dist/index.js",
-        "dist/index.d.ts",
-        "dist/**/*.js",
-        "dist/**/*.d.ts",
-        "README",
-        "LICENSE"
-    ],
-    "publishConfig": {
-        "access": "public"
-    }
+  "name": "@design-sdk/universal",
+  "version": "0.0.53",
+  "private": false,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "authors": [
+    "grida.co",
+    "softmarshmallow <universe@grida.co>"
+  ],
+  "dependencies": {
+    "@design-sdk/core": "^0.0.53",
+    "@design-sdk/figma": "^0.0.53",
+    "@design-sdk/sketch": "^0.0.53",
+    "@design-sdk/vanilla": "^0.0.53"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "dev": "tsup --watch",
+    "build": "tsup index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "files": [
+    "dist",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }

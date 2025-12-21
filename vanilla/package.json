@@ -1,31 +1,32 @@
 {
-    "name": "@design-sdk/vanilla",
-    "version": "0.0.53",
-    "private": false,
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
-    "authors": [
-        "grida.co",
-        "softmarshmallow <universe@grida.co>"
-    ],
-    "scripts": {
-        "clean": "rimraf dist",
-        "build": "tsc",
-        "test": "jest"
-    },
-    "dependencies": {
-        "@design-sdk/asset-repository": "^0.0.53"
-    },
-    "peerDependencies": {
-        "@design-sdk/core": "*",
-        "@design-sdk/figma-node": "*"
-    },
-    "files": [
-        "dist",
-        "README",
-        "LICENSE"
-    ],
-    "publishConfig": {
-        "access": "public"
-    }
+  "name": "@design-sdk/vanilla",
+  "version": "0.0.53",
+  "private": false,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "authors": [
+    "grida.co",
+    "softmarshmallow <universe@grida.co>"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "dev": "tsup --watch",
+    "build": "tsup lib/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@design-sdk/asset-repository": "^0.0.53"
+  },
+  "peerDependencies": {
+    "@design-sdk/core": "*",
+    "@design-sdk/figma-node": "*"
+  },
+  "files": [
+    "dist",
+    "README",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }

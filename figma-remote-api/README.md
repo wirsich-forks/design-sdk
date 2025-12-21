@@ -5,7 +5,7 @@
 ## Installation
 
 ```sh
-yarn add @design-sdk/figma-remote-api
+pnpm add @design-sdk/figma-remote-api
 
 # or with npm
 npm i @design-sdk/figma-remote-api

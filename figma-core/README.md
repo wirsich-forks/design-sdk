@@ -3,7 +3,7 @@
 This is used internally by the `@design-sdk/figma` family of packages.
 
 ```sh
-yarn add @design-sdk/figma-core
+pnpm add @design-sdk/figma-core
 ```
 
 ## File Key

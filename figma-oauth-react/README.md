@@ -3,7 +3,7 @@
 ## Installation
 
 ```sh
-yarn add @design-sdk/figma-oauth-react
+pnpm add @design-sdk/figma-oauth-react
 # or with npm
 npm i @design-sdk/figma-oauth-react
 ```

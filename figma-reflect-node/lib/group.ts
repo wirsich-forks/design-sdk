@@ -18,23 +18,23 @@ export class ReflectGroupNode
 {
   readonly type: ReflectSceneNodeType.group = ReflectSceneNodeType.group;
 
-  opacity: number;
-  blendMode: "PASS_THROUGH" | BlendMode;
-  isMask: boolean;
-  effects: readonly Effect[];
-  effectStyleId: string;
-  visible: boolean;
-  radius: number;
-  absoluteTransform: types.Transform;
-  x: number;
-  y: number;
-  rotation: number;
-  width: number;
-  height: number;
-  layoutAlign: FigmaLayoutAlign;
-  layoutGrow: FigmaLayoutGrow;
+  declare opacity: number;
+  declare blendMode: "PASS_THROUGH" | BlendMode;
+  declare isMask: boolean;
+  declare effects: readonly Effect[];
+  declare effectStyleId: string;
+  declare visible: boolean;
+  declare radius: number;
+  declare absoluteTransform: types.Transform;
+  declare x: number;
+  declare y: number;
+  declare rotation: number;
+  declare width: number;
+  declare height: number;
+  declare layoutAlign: FigmaLayoutAlign;
+  declare layoutGrow: FigmaLayoutGrow;
 
-  children: Array<ReflectSceneNode>;
+  declare children: Array<ReflectSceneNode>;
 }
 
 //#endregion

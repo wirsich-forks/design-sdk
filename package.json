@@ -1,35 +1,27 @@
 {
   "name": "design-sdk",
   "private": true,
-  "workspaces": [
-    "core",
-    "core-*",
-    "design-diff",
-    "key-annotations",
-    "figma",
-    "figma-*",
-    "sketch",
-    "sketch-types",
-    "xd",
-    "universal",
-    "vanilla",
-    "url-analysis"
-  ],
   "scripts": {
-    "clean": "rimraf */dist",
-    "lerna": "lerna",
-    "bootstrap": "lerna bootstrap",
-    "publish:all": "lerna publish",
-    "build": "yarn clean && lerna run build"
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "typecheck": "turbo run typecheck",
+    "clean": "turbo run clean",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "pnpm build && changeset publish"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.23",
-    "@types/node": "^15.12.4",
-    "jest": "^27.0.5",
-    "lerna": "^9.0.3",
-    "rimraf": "^3.0.2",
-    "ts-jest": "^27.0.3",
-    "typescript": "^4.3.4"
+    "@changesets/cli": "^2.27.1",
+    "@types/node": "^20.11.0",
+    "rimraf": "^5.0.5",
+    "tsup": "^8.0.1",
+    "turbo": "^2.0.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.0"
   },
-  "packageManager": "yarn@1.22.22"
+  "packageManager": "pnpm@10.26.1",
+  "engines": {
+    "node": ">=24"
+  }
 }

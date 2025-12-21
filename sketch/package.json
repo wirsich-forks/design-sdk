@@ -1,19 +1,21 @@
 {
-    "name": "@design-sdk/sketch",
-    "version": "0.0.53",
-    "private": false,
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
-    "scripts": {
-        "clean": "rimraf dist",
-        "build": "tsc"
-    },
-    "files": [
-        "dist",
-        "README",
-        "LICENSE"
-    ],
-    "publishConfig": {
-        "access": "public"
-    }
+  "name": "@design-sdk/sketch",
+  "version": "0.0.53",
+  "private": false,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rimraf dist",
+    "dev": "tsup --watch",
+    "build": "tsup lib/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "files": [
+    "dist",
+    "README",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }

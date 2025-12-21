@@ -5,7 +5,7 @@
 ## Installation
 
 ```sh
-yarn add @design-sdk/figma-auth-store
+pnpm add @design-sdk/figma-auth-store
 
 # or with npm
 npm i @design-sdk/figma-auth-store

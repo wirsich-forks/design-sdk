@@ -1,52 +1,51 @@
 {
-    "name": "@design-sdk/figma-remote",
-    "version": "0.0.53",
-    "private": false,
-    "description": "Figma remote api & formats",
-    "license": "MIT",
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
-    "homepage": "https://github.com/gridaco/design-sdk",
-    "repository": "https://github.com/gridaco/design-sdk",
-    "scripts": {
-        "clean": "rimraf dist",
-        "build": "tsc",
-        "test": "jest"
-    },
-    "exports": {
-        ".": "./dist/index.js",
-        "./asset-repository": "./dist/asset-repository/index.js"
-    },
-    "typesVersions": {
-        "*": {
-            ".": [
-                "dist/index.d.ts"
-            ],
-            "asset-repository": [
-                "dist/asset-repository/index.d.ts"
-            ]
-        }
-    },
-    "dependencies": {
-        "@design-sdk/asset-repository": "^0.0.53",
-        "@design-sdk/figma-node": "^0.0.53",
-        "@design-sdk/figma-node-conversion": "^0.0.53",
-        "@design-sdk/figma-remote-api": "^0.0.53",
-        "@design-sdk/figma-utils": "^0.0.53"
-    },
-    "devDependencies": {
-        "@design-sdk/figma-remote-types": "^0.0.53",
-        "typescript": "^4.3.5"
-    },
-    "files": [
-        "dist/index.js",
-        "dist/index.d.ts",
-        "dist/**/*.js",
-        "dist/**/*.d.ts",
-        "README",
-        "LICENSE"
-    ],
-    "publishConfig": {
-        "access": "public"
+  "name": "@design-sdk/figma-remote",
+  "version": "0.0.53",
+  "private": false,
+  "description": "Figma remote api & formats",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "homepage": "https://github.com/gridaco/figma-sdk",
+  "repository": "https://github.com/gridaco/figma-sdk",
+  "scripts": {
+    "clean": "rimraf dist",
+    "dev": "tsup --watch",
+    "build": "tsup lib/index.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./asset-repository": "./dist/asset-repository/index.js"
+  },
+  "typesVersions": {
+    "*": {
+      ".": [
+        "dist/index.d.ts"
+      ],
+      "asset-repository": [
+        "dist/asset-repository/index.d.ts"
+      ]
     }
+  },
+  "dependencies": {
+    "@design-sdk/asset-repository": "^0.0.53",
+    "@design-sdk/figma-node": "^0.0.53",
+    "@design-sdk/figma-node-conversion": "^0.0.53",
+    "@design-sdk/figma-remote-api": "^0.0.53",
+    "@design-sdk/figma-utils": "^0.0.53"
+  },
+  "devDependencies": {
+    "@design-sdk/figma-remote-types": "^0.0.53",
+    "vitest": "^1.2.0"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }

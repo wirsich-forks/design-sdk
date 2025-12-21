@@ -3,6 +3,10 @@
   "version": "0.0.53",
   "description": "Abstract type definitions for Figma node types with reflect property typings",
   "private": false,
+  "scripts": {
+    "build": "exit 0",
+    "typecheck": "echo 'no typescript sources' && exit 0"
+  },
   "publishConfig": {
     "access": "public"
   }

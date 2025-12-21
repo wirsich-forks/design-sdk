@@ -1,0 +1,11 @@
+packages:
+  - 'core'
+  - 'core-*'
+  - 'design-diff'
+  - 'figma'
+  - 'figma-*'
+  - 'sketch*'
+  - 'universal'
+  - 'vanilla'
+  - 'url-analysis'
+  - 'sampler'

@@ -16,12 +16,12 @@ export class ReflectBooleanOperationNode
 {
   readonly type: ReflectSceneNodeType.boolean_operation =
     ReflectSceneNodeType.boolean_operation;
-  constraints: Constraints;
+  declare constraints: Constraints;
 
   // --------------- BOOL OP -----------------
   booleanOperation: FigmaBooleanOpeartionType;
   shapeCornerRadius: number;
-  cornerSmoothing: number;
+  declare cornerSmoothing: number;
 
   /**
    * @deprecated - this exists on plugin typings, but no document is available. update this property's doc later.

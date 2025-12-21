@@ -1,29 +1,31 @@
 {
-    "name": "@design-sdk/diff",
-    "description": "diff utils for design",
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
-    "keywords": [
-        "design",
-        "diff"
-    ],
-    "version": "0.0.53",
-    "authors": "Grida.co",
-    "private": false,
-    "scripts": {
-        "clean": "rimraf dist",
-        "build": "tsc"
-    },
-    "dependencies": {
-        "@design-sdk/figma-types": "^0.0.53",
-        "@design-sdk/figma-xpath": "^0.0.53"
-    },
-    "files": [
-        "dist",
-        "README.md",
-        "LICENSE"
-    ],
-    "publishConfig": {
-        "access": "public"
-    }
+  "name": "@design-sdk/diff",
+  "description": "diff utils for design",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "design",
+    "diff"
+  ],
+  "version": "0.0.53",
+  "authors": "Grida.co",
+  "private": false,
+  "scripts": {
+    "clean": "rimraf dist",
+    "dev": "tsup --watch",
+    "build": "tsup index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@design-sdk/figma-types": "^0.0.53",
+    "@design-sdk/figma-xpath": "^0.0.53"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }

@@ -18,18 +18,18 @@ export class ReflectDefaultShapeMixin
   extends ReflectConstraintMixin
   implements IReflectDefaultShapeMixin
 {
-  layoutGrow: FigmaLayoutGrow;
-  layoutAlign: FigmaLayoutAlign;
-  opacity: number;
-  blendMode: "PASS_THROUGH" | BlendMode;
-  isMask: boolean;
-  effects: ReadonlyArray<Effect>;
-  effectStyleId: string;
-  visible: boolean;
-  radius: number;
+  declare layoutGrow: FigmaLayoutGrow;
+  declare layoutAlign: FigmaLayoutAlign;
+  declare opacity: number;
+  declare blendMode: "PASS_THROUGH" | BlendMode;
+  declare isMask: boolean;
+  declare effects: ReadonlyArray<Effect>;
+  declare effectStyleId: string;
+  declare visible: boolean;
+  declare radius: number;
 
-  fills: ReadonlyArray<Paint> | undefined;
-  strokes: ReadonlyArray<Paint>;
+  declare fills: ReadonlyArray<Paint> | undefined;
+  declare strokes: ReadonlyArray<Paint>;
   strokeWeight: number;
   strokeMiterLimit: number;
   strokeAlign: "CENTER" | "INSIDE" | "OUTSIDE";
@@ -41,11 +41,11 @@ export class ReflectDefaultShapeMixin
   strokeStyleId: string;
 
   cornerRadius: BorderRadiusManifest;
-  cornerSmoothing: number;
+  declare cornerSmoothing: number;
 
-  x: number;
-  y: number;
-  rotation: number;
-  width: number;
-  height: number;
+  declare x: number;
+  declare y: number;
+  declare rotation: number;
+  declare width: number;
+  declare height: number;
 }

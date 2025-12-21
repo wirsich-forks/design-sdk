@@ -1,7 +1,7 @@
 # `@design-sdk/query`
 
 ```bash
-yarn add @design-sdk/query
+pnpm add @design-sdk/query
 ```
 
 ## Usage

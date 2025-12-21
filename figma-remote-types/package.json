@@ -1,41 +1,35 @@
 {
-    "name": "@design-sdk/figma-remote-types",
-    "description": "Light-weight Figma Remote api wrapper with types & authentication",
-    "main": "index.js",
-    "types": "index.d.ts",
-    "version": "0.0.53",
-    "private": false,
-    "keywords": [
-        "figma",
-        "oauth",
-        "sdk",
-        "design-sdk",
-        "api",
-        "token",
-        "passport",
-        "figma-types"
-    ],
-    "homepage": "https://github.com/gridaco/design-sdk/",
-    "repository": "https://github.com/gridaco/design-sdk/tree/main/figma-remote-api/",
-    "authors": "Grida.co",
-    "license": "MIT",
-    "scripts": {
-        "build": "echo 'this package does not require build' && exit 0",
-        "test": "jest"
-    },
-    "devDependencies": {
-        "@types/jest": "^26.0.24",
-        "jest": "^27.0.6",
-        "ts-jest": "^27.0.3",
-        "typescript": "^4.3.5"
-    },
-    "files": [
-        "index.d.ts",
-        "index.js",
-        "README",
-        "LICENSE"
-    ],
-    "publishConfig": {
-        "access": "public"
-    }
+  "name": "@design-sdk/figma-remote-types",
+  "description": "Light-weight Figma Remote api wrapper with types & authentication",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "version": "0.0.53",
+  "private": false,
+  "keywords": [
+    "figma",
+    "oauth",
+    "sdk",
+    "design-sdk",
+    "api",
+    "token",
+    "passport",
+    "figma-types"
+  ],
+  "homepage": "https://github.com/gridaco/figma-sdk/",
+  "repository": "https://github.com/gridaco/figma-sdk/tree/main/figma-remote-api/",
+  "authors": "Grida.co",
+  "license": "MIT",
+  "scripts": {
+    "build": "echo 'this package does not require build' && exit 0",
+    "typecheck": "echo 'no typescript sources' && exit 0"
+  },
+  "files": [
+    "index.d.ts",
+    "index.js",
+    "README",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
