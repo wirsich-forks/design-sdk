@@ -16,8 +16,10 @@
     "build": "tsup lib/index.ts",
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "@design-sdk/figma-types": "workspace:*"
+  },
   "devDependencies": {
-    "@design-sdk/figma-types": "workspace:*",
     "@reflect-ui/core": "^0.0.5"
   },
   "publishConfig": {

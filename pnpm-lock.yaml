@@ -316,10 +316,11 @@ importers:
         version: 4.0.16(vitest@4.0.16(@types/node@20.19.27))
 
   figma-utils:
-    devDependencies:
+    dependencies:
       '@design-sdk/figma-types':
         specifier: workspace:*
         version: link:../figma-types
+    devDependencies:
       '@reflect-ui/core':
         specifier: ^0.0.5
         version: 0.0.5(@reflect-ui/cg@0.1.1)
