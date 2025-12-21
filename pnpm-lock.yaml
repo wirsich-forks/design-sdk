@@ -177,6 +177,9 @@ importers:
       '@reflect-ui/font-utils':
         specifier: ^0.0.5
         version: 0.0.5
+      '@reflect-ui/uiutils':
+        specifier: ^0.1.2-2
+        version: 0.1.2-2
     devDependencies:
       '@types/node':
         specifier: ^20.11.0
