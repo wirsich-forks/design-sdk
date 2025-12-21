@@ -1,7 +1,7 @@
 {
   "name": "@design-sdk/figma-node-conversion",
   "description": "convert figma nodes into a universal version - to reflect design nodes",
-  "version": "0.0.53",
+  "version": "1.0.0",
   "private": false,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -21,17 +21,17 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@design-sdk/figma-node": "^0.0.53",
-    "@design-sdk/figma-types": "^0.0.53",
-    "@design-sdk/figma-utils": "^0.0.53",
-    "@design-sdk/flags": "^0.0.53",
+    "@design-sdk/figma-node": "^1.0.0",
+    "@design-sdk/figma-types": "^0.1.0",
+    "@design-sdk/figma-utils": "^0.1.0",
+    "@design-sdk/flags": "^0.1.0",
     "@reflect-ui/cg": "^0.0.5",
     "@reflect-ui/core": "^0.0.5",
     "@reflect-ui/font-utils": "^0.0.5",
     "@reflect-ui/uiutils": "^0.1.2-2"
   },
   "peerDependencies": {
-    "@design-sdk/figma-core": "^0.0.53"
+    "@design-sdk/figma-core": "^0.1.0"
   },
   "files": [
     "dist",
