@@ -53,6 +53,9 @@ importers:
       '@reflect-ui/namings':
         specifier: 0.0.3
         version: 0.0.3
+      '@reflect-ui/uiutils':
+        specifier: ^0.1.2-2
+        version: 0.1.2-2
 
   core-asset-repository:
     dependencies:
@@ -2885,12 +2888,12 @@ snapshots:
   '@reflect-ui/core@0.0.5(@reflect-ui/cg@0.0.5)':
     dependencies:
       '@reflect-ui/cg': 0.0.5
-      '@reflect-ui/uiutils': 0.1.2-1
+      '@reflect-ui/uiutils': 0.1.2-2
 
   '@reflect-ui/core@0.0.5(@reflect-ui/cg@0.1.1)':
     dependencies:
       '@reflect-ui/cg': 0.1.1
-      '@reflect-ui/uiutils': 0.1.2-1
+      '@reflect-ui/uiutils': 0.1.2-2
 
   '@reflect-ui/font-utils@0.0.1': {}
 

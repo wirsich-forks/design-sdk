@@ -33,7 +33,8 @@
     "@design-sdk/figma-utils": "^0.0.53",
     "@design-sdk/flags": "^0.0.17",
     "@reflect-ui/core": "0.0.5",
-    "@reflect-ui/namings": "0.0.3"
+    "@reflect-ui/namings": "0.0.3",
+    "@reflect-ui/uiutils": "^0.1.2-2"
   },
   "files": [
     "dist",
