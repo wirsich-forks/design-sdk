@@ -15,7 +15,6 @@
     "@design-sdk/asset-repository": "workspace:*",
     "@design-sdk/figma-node": "workspace:*",
     "@design-sdk/figma-node-conversion": "workspace:*",
-    "@design-sdk/figma-remote": "workspace:*",
     "@design-sdk/figma-types": "workspace:*",
     "@design-sdk/figma-url": "workspace:*",
     "@reflect-ui/core": "^0.0.5",

@@ -1,4 +1,4 @@
-import type { StrokeCap } from "@design-sdk/figma";
+import type { StrokeCap } from "@design-sdk/figma-types";
 import type { VectorBase } from "@design-sdk/figma-remote-types";
 
 /**

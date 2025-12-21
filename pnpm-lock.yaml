@@ -117,9 +117,6 @@ importers:
       '@design-sdk/figma-node-conversion':
         specifier: workspace:*
         version: link:../figma-node-conversion
-      '@design-sdk/figma-remote':
-        specifier: workspace:*
-        version: link:../figma-remote
       '@design-sdk/figma-types':
         specifier: workspace:*
         version: link:../figma-types
