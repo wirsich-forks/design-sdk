@@ -1,6 +1,6 @@
 {
   "name": "@design-sdk/figma",
-  "version": "0.0.53",
+  "version": "0.1.0",
   "authors": "Grida.co",
   "private": false,
   "main": "dist/index.js",
@@ -12,12 +12,12 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@design-sdk/asset-repository": "^0.0.53",
-    "@design-sdk/figma-node": "^0.0.53",
-    "@design-sdk/figma-node-conversion": "^0.0.53",
-    "@design-sdk/figma-remote": "^0.0.53",
-    "@design-sdk/figma-types": "^0.0.53",
-    "@design-sdk/figma-url": "^0.0.54",
+    "@design-sdk/asset-repository": "^0.1.0",
+    "@design-sdk/figma-node": "^1.0.0",
+    "@design-sdk/figma-node-conversion": "^1.0.0",
+    "@design-sdk/figma-remote": "^0.1.0",
+    "@design-sdk/figma-types": "^0.1.0",
+    "@design-sdk/figma-url": "^0.1.0",
     "@reflect-ui/core": "^0.0.5",
     "@reflect-ui/namings": "^0.0.3",
     "@reflect-ui/uiutils": "0.1.2-1"

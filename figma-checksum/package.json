@@ -1,6 +1,6 @@
 {
   "name": "@design-sdk/figma-checksum",
-  "version": "0.0.53",
+  "version": "0.1.0",
   "private": false,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -11,13 +11,13 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@design-sdk/figma": "^0.0.53",
-    "@design-sdk/figma-auth-store": "^0.0.53",
-    "@design-sdk/figma-remote-api": "^0.0.53",
+    "@design-sdk/figma": "^0.1.0",
+    "@design-sdk/figma-auth-store": "^0.1.0",
+    "@design-sdk/figma-remote-api": "^0.1.0",
     "nanoid": "^3.1.30"
   },
   "devDependencies": {
-    "@design-sdk/figma-types": "^0.0.53",
+    "@design-sdk/figma-types": "^0.1.0",
     "@figma/plugin-typings": "1.37.0"
   },
   "files": [

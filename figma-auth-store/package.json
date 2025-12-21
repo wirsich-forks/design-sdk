@@ -20,7 +20,7 @@
     "grida.co",
     "softmarshmallow <universe@grida.co>"
   ],
-  "version": "0.0.53",
+  "version": "0.1.0",
   "scripts": {
     "clean": "rimraf dist",
     "dev": "tsup --watch",
