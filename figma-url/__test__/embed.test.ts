@@ -10,6 +10,6 @@ test("build embed url", () => {
 
 test("build embed url with file & node id", () => {
   expect(embed({ fileid: "Y0Gh77AqBoHH7dG1GtK3xF", nodeid: "264%3A49" })).toBe(
-    "https://www.figma.com/embed?embed_host=astra&url=https://www.figma.com/file/Y0Gh77AqBoHH7dG1GtK3xF/?node-id=264%3A49"
+    "https://www.figma.com/embed?embed_host=astra&url=https://www.figma.com/design/Y0Gh77AqBoHH7dG1GtK3xF/?node-id=264%3A49"
   );
 });

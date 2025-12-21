@@ -81,8 +81,19 @@ export function analyze(url: string): FigmaInputAnalysisResult {
     // but the only case the url is encoded is when it's for embeding
     // - which will be returned above. it's fine.
     if (_u.hostname == "figma.com" || _u.hostname == "www.figma.com") {
-      // file path is required for both file and node.
-      if (_u.pathname.includes("file/")) {
+      // Support all Figma URL patterns: file/, design/, board/, slides/, site/
+      const supportedPathPatterns = [
+        "file/",
+        "design/",
+        "board/",
+        "slides/",
+        "site/",
+      ];
+      const matchedPattern = supportedPathPatterns.find((pattern) =>
+        _u.pathname.includes(pattern)
+      );
+
+      if (matchedPattern) {
         if (_u.searchParams.get(_PARAM_NODE_ID)?.length > 0) {
           return FigmaUrlType.node;
         } else {

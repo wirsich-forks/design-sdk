@@ -40,3 +40,63 @@ test("parse nodeid and fileid from url v2 (updated figma url via copy link)", ()
     url,
   });
 });
+
+test("parse fileid from design URL (new pattern)", () => {
+  const url = "https://www.figma.com/design/Y0Gh77AqBoHH7dG1GtK3xF/";
+  expect(parseFileId(url)).toBe("Y0Gh77AqBoHH7dG1GtK3xF");
+});
+
+test("parse fileid from board URL (FigJam)", () => {
+  const url = "https://www.figma.com/board/Y0Gh77AqBoHH7dG1GtK3xF/";
+  expect(parseFileId(url)).toBe("Y0Gh77AqBoHH7dG1GtK3xF");
+});
+
+test("parse fileid from slides URL (Figma Slides)", () => {
+  const url = "https://www.figma.com/slides/Y0Gh77AqBoHH7dG1GtK3xF/";
+  expect(parseFileId(url)).toBe("Y0Gh77AqBoHH7dG1GtK3xF");
+});
+
+test("parse fileid from site URL (Figma Site)", () => {
+  const url = "https://www.figma.com/site/Y0Gh77AqBoHH7dG1GtK3xF/";
+  expect(parseFileId(url)).toBe("Y0Gh77AqBoHH7dG1GtK3xF");
+});
+
+test("parse nodeid and fileid from design URL", () => {
+  const url =
+    "https://www.figma.com/design/Gaznaw1QHppxvs9UkqNOb0/grida.co?node-id=5683:31451&t=ttMsIZRdkBv78VUQ-0";
+  expect(parseFileAndNodeId(url)).toEqual({
+    file: "Gaznaw1QHppxvs9UkqNOb0",
+    node: "5683:31451",
+    url,
+  });
+});
+
+test("parse nodeid and fileid from board URL", () => {
+  const url =
+    "https://www.figma.com/board/Gaznaw1QHppxvs9UkqNOb0/grida.co?node-id=5683%3A31451&t=ttMsIZRdkBv78VUQ-0";
+  expect(parseFileAndNodeId(url)).toEqual({
+    file: "Gaznaw1QHppxvs9UkqNOb0",
+    node: "5683:31451",
+    url,
+  });
+});
+
+test("parse nodeid and fileid from slides URL", () => {
+  const url =
+    "https://www.figma.com/slides/Gaznaw1QHppxvs9UkqNOb0/grida.co?node-id=5683-31451&t=ttMsIZRdkBv78VUQ-0";
+  expect(parseFileAndNodeId(url)).toEqual({
+    file: "Gaznaw1QHppxvs9UkqNOb0",
+    node: "5683:31451",
+    url,
+  });
+});
+
+test("parse nodeid and fileid from site URL", () => {
+  const url =
+    "https://www.figma.com/site/Gaznaw1QHppxvs9UkqNOb0/grida.co?node-id=5683:31451";
+  expect(parseFileAndNodeId(url)).toEqual({
+    file: "Gaznaw1QHppxvs9UkqNOb0",
+    node: "5683:31451",
+    url,
+  });
+});

@@ -35,7 +35,7 @@ function _build(url: string) {
 }
 
 /**
- * e.g. - https://www.figma.com/file/HSozKEVWhh8saZa2vr1Nxd?node-id=111%3A0
+ * e.g. - https://www.figma.com/design/HSozKEVWhh8saZa2vr1Nxd?node-id=111%3A0
  *
  * (*this does not contain logic for checking if input url is valid.*)
  * @param src : ;
@@ -54,7 +54,8 @@ export function builEmbedableSourceUrl(
     return src.url;
   } else if ("fileid" in src) {
     /// WWW prefix is required. if non passed, figma embed won't accept it.
-    return `https://www.figma.com/file/${src.fileid}/${
+    /// Use /design/ pattern for new URLs (replaces /file/)
+    return `https://www.figma.com/design/${src.fileid}/${
       src.nodeid && `?node-id=${src.nodeid}`
     }`;
   } else {

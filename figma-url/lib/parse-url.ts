@@ -3,18 +3,35 @@ import { FigmaTargetNodeConfig } from "./target-node-config";
 /**
  * extracts file id from share link
  *
- * e.g. in - "https://www.figma.com/file/Y0Gh77AqBoHH7dG1GtK3xF/?node-id=775%3A112"
+ * Supports multiple Figma URL patterns:
+ * - Old: "https://www.figma.com/file/Y0Gh77AqBoHH7dG1GtK3xF/?node-id=775%3A112"
+ * - New: "https://www.figma.com/design/Y0Gh77AqBoHH7dG1GtK3xF/?node-id=775%3A112"
+ * - New: "https://www.figma.com/board/Y0Gh77AqBoHH7dG1GtK3xF/?node-id=775%3A112"
+ * - New: "https://www.figma.com/slides/Y0Gh77AqBoHH7dG1GtK3xF/?node-id=775%3A112"
+ * - New: "https://www.figma.com/site/Y0Gh77AqBoHH7dG1GtK3xF/?node-id=775%3A112"
  *
  * out - "Y0Gh77AqBoHH7dG1GtK3xF"
  * @param url
  * @returns
  */
 export function parseFileId(url: string) {
-  // this logic is dangerous, but clean and simple. works for now. (think the url format won't change)
-  if (url.includes("https://www.figma.com/file/")) {
+  // File ID is in the same position (4th segment) for all URL patterns
+  const supportedPatterns = [
+    "https://www.figma.com/file/",
+    "https://www.figma.com/design/",
+    "https://www.figma.com/board/",
+    "https://www.figma.com/slides/",
+    "https://www.figma.com/site/",
+  ];
+
+  const matchedPattern = supportedPatterns.find((pattern) =>
+    url.includes(pattern)
+  );
+
+  if (matchedPattern) {
     return url.split("/")[4];
   } else {
-    throw `figma file url must contain "https://www.figma.com/file/". the givven was ${url}, which we cannot extract file id from it.`;
+    throw `figma url must contain one of the supported patterns (file/, design/, board/, slides/, site/). the given was ${url}, which we cannot extract file id from it.`;
   }
 }
 
@@ -47,7 +64,12 @@ export function formatNodeId(node_id: string) {
 }
 
 /**
- * pattern is "https://www.figma.com/file/Y0Gh77AqBoHH7dG1GtK3xF/?node-id=775%3A112"
+ * pattern examples:
+ * - "https://www.figma.com/file/Y0Gh77AqBoHH7dG1GtK3xF/?node-id=775%3A112"
+ * - "https://www.figma.com/design/Y0Gh77AqBoHH7dG1GtK3xF/?node-id=775%3A112"
+ * - "https://www.figma.com/board/Y0Gh77AqBoHH7dG1GtK3xF/?node-id=775%3A112"
+ * - "https://www.figma.com/slides/Y0Gh77AqBoHH7dG1GtK3xF/?node-id=775%3A112"
+ * - "https://www.figma.com/site/Y0Gh77AqBoHH7dG1GtK3xF/?node-id=775%3A112"
  * @param url
  */
 export function parseFileAndNodeId(
