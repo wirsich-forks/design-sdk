@@ -1,20 +1,22 @@
 {
-    "name": "@design-sdk/core-types",
-    "description": "Core typings for design representetives",
-    "authors": "Grida.co",
-    "version": "0.0.53",
-    "private": false,
-    "main": "dist/index.js",
-    "scripts": {
-        "clean": "rimraf dist",
-        "build": "tsc"
-    },
-    "files": [
-        "dist",
-        "README.md",
-        "LICENSE"
-    ],
-    "publishConfig": {
-        "access": "public"
-    }
+  "name": "@design-sdk/core-types",
+  "description": "Core typings for design representetives",
+  "authors": "Grida.co",
+  "version": "0.0.53",
+  "private": false,
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "dev": "tsup --watch",
+    "build": "tsup index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }

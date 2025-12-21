@@ -9,8 +9,8 @@
 **Usage**
 
 ```bash
-yarn
-yarn sample <filekye> [node-id...]
+pnpm install
+pnpm sample <filekye> [node-id...]
 # e.g.
-# yarn sample vXAxldxvDUBWW8EVZIGmgC 1:2
+# pnpm sample vXAxldxvDUBWW8EVZIGmgC 1:2
 ```

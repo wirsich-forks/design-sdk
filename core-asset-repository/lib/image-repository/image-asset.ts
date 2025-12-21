@@ -27,8 +27,8 @@ export interface ImageAsset {
 export class TemporaryImageAsset<
   P extends string = string
 > extends TemporaryAsset<Uint8Array> {
-  data?: Uint8Array;
-  url: P;
+  declare data?: Uint8Array;
+  declare url: P;
   constructor(
     readonly key: string,
     readonly hash: string,

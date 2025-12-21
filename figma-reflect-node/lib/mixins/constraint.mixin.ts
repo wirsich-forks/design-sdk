@@ -1,4 +1,4 @@
-import { ReflectBaseNode } from "../base.node";
+import { ReflectBaseNode } from "../base";
 import {
   LCRS,
   getNodeActualLCRS,
@@ -16,7 +16,7 @@ export class ReflectConstraintMixin
   extends ReflectBaseNode
   implements IReflectConstraintMixin
 {
-  constraints: Constraints;
+  declare constraints: Constraints;
 
   /**
    * the current node's constraint LCRS positioning. as is.

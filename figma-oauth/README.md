@@ -5,7 +5,7 @@
 ## Installation
 
 ```sh
-yarn add @design-sdk/figma-oauth
+pnpm add @design-sdk/figma-oauth
 
 # or with npm
 npm i @design-sdk/figma-oauth

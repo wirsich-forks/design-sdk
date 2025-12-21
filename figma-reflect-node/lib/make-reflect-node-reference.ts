@@ -1,4 +1,4 @@
-import type { ReflectBaseNode } from "./base.node";
+import type { ReflectBaseNode } from "./base";
 import type { SceneNode, ComponentNode } from "@design-sdk/figma-types";
 import type {
   InfiniteChildrenReference,

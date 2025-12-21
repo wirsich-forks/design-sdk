@@ -8,14 +8,15 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "tsc"
+    "dev": "tsup --watch",
+    "build": "tsup lib/index.ts",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@base-sdk/hosting": "^0.1.2"
   },
   "devDependencies": {
-    "@base-sdk/base": "^0.1.4",
-    "typescript": "^4.2.4"
+    "@base-sdk/base": "^0.1.4"
   },
   "files": [
     "dist",

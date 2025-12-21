@@ -31,7 +31,7 @@ export function layoutAlignToReflectMainAxisSize(
   if (process.env.NODE_ENV !== "production") {
     console.error("=".repeat(80));
     console.error(
-      `"${layoutAlign}" is not hanlded for converting to reflect. report this error @ https://github.com/gridaco/design-sdk/issues/new`
+      `"${layoutAlign}" is not hanlded for converting to reflect. report this error @ https://github.com/gridaco/figma-sdk/issues/new`
     );
     console.error("=".repeat(80));
   }

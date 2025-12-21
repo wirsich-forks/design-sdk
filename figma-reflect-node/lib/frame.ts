@@ -58,31 +58,31 @@ export class ReflectFrameNode
 {
   readonly type: ReflectSceneNodeType.frame = ReflectSceneNodeType.frame;
 
-  absoluteTransform: Transform;
+  declare absoluteTransform: Transform;
 
-  constraints: Constraints;
+  declare constraints: Constraints;
 
   // frame mixin
-  layoutGrow: FigmaLayoutGrow;
-  mainAxisAlignment: MainAxisAlignment;
-  crossAxisAlignment: CrossAxisAlignment;
-  layoutMode?: Axis | undefined;
-  primaryAxisSizingMode: FigmaPrimaryAxisSizingMode;
-  counterAxisSizingMode: FigmaCounterAxisSizingMode;
+  declare layoutGrow: FigmaLayoutGrow;
+  declare mainAxisAlignment: MainAxisAlignment;
+  declare crossAxisAlignment: CrossAxisAlignment;
+  declare layoutMode?: Axis | undefined;
+  declare primaryAxisSizingMode: FigmaPrimaryAxisSizingMode;
+  declare counterAxisSizingMode: FigmaCounterAxisSizingMode;
   itemSpacing: number;
-  padding: EdgeInsets;
+  declare padding: EdgeInsets;
   layoutGrids: ReadonlyArray<LayoutGrid>;
   gridStyleId: string;
   clipsContent: boolean;
   guides: ReadonlyArray<Guide>;
 
   // children mixin
-  children: Array<ReflectSceneNode>;
-  isRelative?: boolean;
+  declare children: Array<ReflectSceneNode>;
+  declare isRelative?: boolean;
 
   // geometry mixin
-  fills: ReadonlyArray<Paint> | undefined;
-  strokes: ReadonlyArray<Paint>;
+  declare fills: ReadonlyArray<Paint> | undefined;
+  declare strokes: ReadonlyArray<Paint>;
   strokeWeight: number;
   strokeMiterLimit: number;
   strokeAlign: "CENTER" | "INSIDE" | "OUTSIDE";
@@ -95,7 +95,7 @@ export class ReflectFrameNode
 
   // corner mixin
   cornerRadius: BorderRadiusManifest;
-  cornerSmoothing: number;
+  declare cornerSmoothing: number;
 
   // rectangle corner mixin
   topLeftRadius: number;
@@ -104,21 +104,21 @@ export class ReflectFrameNode
   bottomRightRadius: number;
 
   // blend mixin
-  opacity: number;
-  blendMode: "PASS_THROUGH" | BlendMode;
-  isMask: boolean;
-  effects: ReadonlyArray<Effect>;
-  effectStyleId: string;
-  visible: boolean;
-  radius: number;
+  declare opacity: number;
+  declare blendMode: "PASS_THROUGH" | BlendMode;
+  declare isMask: boolean;
+  declare effects: ReadonlyArray<Effect>;
+  declare effectStyleId: string;
+  declare visible: boolean;
+  declare radius: number;
 
   // layout mixin
-  x: number;
-  y: number;
-  rotation: number; // In degrees
-  width: number;
-  height: number;
-  layoutAlign: FigmaLayoutAlign;
+  declare x: number;
+  declare y: number;
+  declare rotation: number; // In degrees
+  declare width: number;
+  declare height: number;
+  declare layoutAlign: FigmaLayoutAlign;
 
   get isAutoLayout(): boolean {
     return checkIfAutoLayout(this);

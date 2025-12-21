@@ -1,4 +1,4 @@
-import { plugin, InstanceNode, ComponentNode } from "@design-sdk/figma";
+import { plugin, InstanceNode, ComponentNode } from "@design-sdk/figma-types";
 import { isVariantMatchingName } from "./variant-name-utils";
 
 /**

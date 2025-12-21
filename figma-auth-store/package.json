@@ -1,48 +1,42 @@
 {
-    "name": "@design-sdk/figma-auth-store",
-    "description": "Authentication credential management for figma on nodejs",
-    "private": false,
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
-    "keywords": [
-        "figma",
-        "oauth",
-        "auth",
-        "access-token",
-        "sdk",
-        "design-sdk",
-        "token",
-        "passport"
-    ],
-    "homepage": "https://github.com/gridaco/design-sdk/",
-    "repository": "https://github.com/gridaco/design-sdk/tree/main/figma-auth-store/",
-    "authors": [
-        "grida.co",
-        "softmarshmallow <universe@grida.co>"
-    ],
-    "version": "0.0.53",
-    "scripts": {
-        "clean": "rimraf dist",
-        "build": "tsc",
-        "test": "jest"
-    },
-    "devDependencies": {
-        "@types/jest": "^26.0.24",
-        "@types/node": "^16.3.3",
-        "dotenv": "^10.0.0",
-        "jest": "^27.0.6",
-        "ts-jest": "^27.0.3",
-        "typescript": "^4.3.5"
-    },
-    "files": [
-        "dist/index.js",
-        "dist/index.d.ts",
-        "dist/**/*.js",
-        "dist/**/*.d.ts",
-        "README",
-        "LICENSE"
-    ],
-    "publishConfig": {
-        "access": "public"
-    }
+  "name": "@design-sdk/figma-auth-store",
+  "description": "Authentication credential management for figma on nodejs",
+  "private": false,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "figma",
+    "oauth",
+    "auth",
+    "access-token",
+    "sdk",
+    "design-sdk",
+    "token",
+    "passport"
+  ],
+  "homepage": "https://github.com/gridaco/figma-sdk/",
+  "repository": "https://github.com/gridaco/figma-sdk/tree/main/figma-auth-store/",
+  "authors": [
+    "grida.co",
+    "softmarshmallow <universe@grida.co>"
+  ],
+  "version": "0.0.53",
+  "scripts": {
+    "clean": "rimraf dist",
+    "dev": "tsup --watch",
+    "build": "tsup index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "dotenv": "^10.0.0"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }

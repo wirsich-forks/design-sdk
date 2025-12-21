@@ -89,8 +89,8 @@ function xy_as_relative(
   }
 
   return {
-    x: child?.x - parent?.x ?? 0,
-    y: child?.y - parent?.y ?? 0,
+    x: (child?.x ?? 0) - (parent?.x ?? 0),
+    y: (child?.y ?? 0) - (parent?.y ?? 0),
   };
 }
 

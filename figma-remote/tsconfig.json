@@ -1,9 +1,4 @@
 {
-  "extends": "../tsconfig.build.json",
-  "compilerOptions": {
-    "rootDir": "./lib",
-    "outDir": "./dist"
-  },
-  "include": ["lib", "__test__/fecth.test.ts"],
+  "extends": "../tsconfig.json",
   "exclude": ["node_modules", "dist", "__test__"]
 }

@@ -1,28 +1,26 @@
 {
-    "name": "@design-sdk/figma-oauth-react",
-    "description": "Ready to use Figma oauth component for react",
-    "private": false,
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
-    "version": "0.0.53",
-    "authors": [
-        "grida.co",
-        "softmarshmallow <universe@grida.co>"
-    ],
-    "scripts": {
-        "clean": "rimraf dist",
-        "build": "tsc",
-        "test": "jest"
-    },
-    "files": [
-        "dist/index.js",
-        "dist/index.d.ts",
-        "dist/**/*.js",
-        "dist/**/*.d.ts",
-        "README",
-        "LICENSE"
-    ],
-    "publishConfig": {
-        "access": "public"
-    }
+  "name": "@design-sdk/figma-oauth-react",
+  "description": "Ready to use Figma oauth component for react",
+  "private": false,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "version": "0.0.53",
+  "authors": [
+    "grida.co",
+    "softmarshmallow <universe@grida.co>"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "dev": "tsup --watch",
+    "build": "tsup index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }

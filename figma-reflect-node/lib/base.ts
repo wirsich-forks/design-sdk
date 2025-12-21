@@ -168,8 +168,8 @@ export class ReflectBaseNode
   }
 
   // layout related
-  x: number;
-  y: number;
+  declare x: number;
+  declare y: number;
   get absoluteX(): number {
     try {
       // x point on affine space
@@ -190,13 +190,13 @@ export class ReflectBaseNode
     }
   }
 
-  rotation: number; // In degrees
-  width: number;
-  height: number;
-  layoutAlign: FigmaLayoutAlign;
-  layoutGrow: FigmaLayoutGrow;
-  fills?: ReadonlyArray<Paint>;
-  strokes?: ReadonlyArray<Paint>;
+  declare rotation: number; // In degrees
+  declare width: number;
+  declare height: number;
+  declare layoutAlign: FigmaLayoutAlign;
+  declare layoutGrow: FigmaLayoutGrow;
+  declare fills?: ReadonlyArray<Paint>;
+  declare strokes?: ReadonlyArray<Paint>;
 
   /**
    * layoutMode is only available for frame node
@@ -213,16 +213,16 @@ export class ReflectBaseNode
   crossAxisAlignment: CrossAxisAlignment;
   // endregion
 
-  padding: EdgeInsets;
+  declare padding: EdgeInsets;
 
   // blend related
-  opacity: number;
-  blendMode: "PASS_THROUGH" | BlendMode;
-  isMask: boolean;
-  effects: ReadonlyArray<Effect>;
-  effectStyleId: string;
-  visible: boolean;
-  radius: number;
+  declare opacity: number;
+  declare blendMode: "PASS_THROUGH" | BlendMode;
+  declare isMask: boolean;
+  declare effects: ReadonlyArray<Effect>;
+  declare effectStyleId: string;
+  declare visible: boolean;
+  declare radius: number;
   //
 
   get shadows(): ReadonlyArray<BoxShadowManifest> {

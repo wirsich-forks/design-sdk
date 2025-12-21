@@ -1,48 +1,45 @@
 {
-    "name": "@design-sdk/figma-remote-api",
-    "description": "Light-weight Figma Remote api wrapper with types & authentication",
-    "main": "dist/index.js",
-    "private": false,
-    "keywords": [
-        "figma",
-        "oauth",
-        "sdk",
-        "design-sdk",
-        "api",
-        "token",
-        "passport",
-        "figma-types"
-    ],
-    "homepage": "https://github.com/gridaco/design-sdk/",
-    "repository": "https://github.com/gridaco/design-sdk/tree/main/figma-remote-api/",
-    "authors": "Grida.co",
-    "version": "0.0.53",
-    "license": "MIT",
-    "scripts": {
-        "clean": "rimraf dist",
-        "prepack": "tsc",
-        "test": "jest"
-    },
-    "peerDependencies": {
-        "axios": "^0.21.1"
-    },
-    "devDependencies": {
-        "@design-sdk/figma-remote-types": "^0.0.53",
-        "@types/jest": "^26.0.24",
-        "dotenv": "^10.0.0",
-        "jest": "^27.0.6",
-        "ts-jest": "^27.0.3",
-        "typescript": "^4.3.5"
-    },
-    "files": [
-        "dist/index.js",
-        "dist/index.d.ts",
-        "dist/**/*.js",
-        "dist/**/*.d.ts",
-        "README",
-        "LICENSE"
-    ],
-    "publishConfig": {
-        "access": "public"
-    }
+  "name": "@design-sdk/figma-remote-api",
+  "description": "Light-weight Figma Remote api wrapper with types & authentication",
+  "main": "dist/index.js",
+  "private": false,
+  "keywords": [
+    "figma",
+    "oauth",
+    "sdk",
+    "design-sdk",
+    "api",
+    "token",
+    "passport",
+    "figma-types"
+  ],
+  "homepage": "https://github.com/gridaco/figma-sdk/",
+  "repository": "https://github.com/gridaco/figma-sdk/tree/main/figma-remote-api/",
+  "authors": "Grida.co",
+  "version": "0.0.53",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf dist",
+    "dev": "tsup --watch",
+    "build": "tsup index.ts",
+    "prepack": "pnpm build",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "@design-sdk/figma-remote-types": "^0.0.53",
+    "dotenv": "^10.0.0",
+    "vitest": "^1.2.0"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }

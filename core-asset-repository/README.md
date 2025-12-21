@@ -3,7 +3,7 @@
 # Asset Repository
 
 ```bash
-yarn add @design-sdk/asset-repository
+pnpm add @design-sdk/asset-repository
 ```
 
 ```ts

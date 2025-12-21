@@ -1,11 +1,11 @@
-import type { ReflectEllipseNode } from "./ellipse.node";
-import type { ReflectFrameNode } from "./frame.node";
-import type { ReflectGroupNode } from "./group.node";
-import type { ReflectLineNode } from "./line.node";
-import type { ReflectRectangleNode } from "./rectangle.node";
-import type { ReflectTextNode } from "./text.node";
+import type { ReflectEllipseNode } from "./ellipse";
+import type { ReflectFrameNode } from "./frame";
+import type { ReflectGroupNode } from "./group";
+import type { ReflectLineNode } from "./line";
+import type { ReflectRectangleNode } from "./rectangle";
+import type { ReflectTextNode } from "./text";
 import type { ReflectVectorNode } from ".";
-import type { ReflectBooleanOperationNode } from "./boolean-operation.node";
+import type { ReflectBooleanOperationNode } from "./boolean-operation";
 
 type ReflectSceneNode =
   | ReflectFrameNode

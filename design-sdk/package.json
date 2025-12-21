@@ -3,7 +3,10 @@
   "version": "0.0.33",
   "private": false,
   "scripts": {
-    "build": "tsc"
+    "clean": "rimraf dist",
+    "dev": "tsup --watch",
+    "build": "tsup lib/index.ts",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@design-sdk/core": "0.0.33",
