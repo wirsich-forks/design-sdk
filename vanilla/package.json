@@ -15,7 +15,9 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@design-sdk/asset-repository": "^0.0.53"
+    "@base-sdk/base": "0.1.4",
+    "@design-sdk/asset-repository": "^0.0.53",
+    "@reflect-ui/core": "^0.0.5"
   },
   "peerDependencies": {
     "@design-sdk/core": "*",

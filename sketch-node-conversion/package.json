@@ -27,7 +27,10 @@
     "build": "tsup lib/index.ts",
     "typecheck": "tsc --noEmit"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@design-sdk/sketch-types": "^0.0.53",
+    "@reflect-ui/core": "^0.0.5"
+  },
   "files": [
     "dist",
     "LICENSE"

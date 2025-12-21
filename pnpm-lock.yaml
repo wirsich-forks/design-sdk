@@ -259,6 +259,9 @@ importers:
       '@design-sdk/asset-repository':
         specifier: ^0.0.53
         version: 0.0.53
+      '@design-sdk/figma':
+        specifier: ^0.0.53
+        version: 0.0.53(@design-sdk/figma-core@0.0.53)(@reflect-ui/cg@0.1.1)(@reflect-ui/core@0.0.5(@reflect-ui/cg@0.1.1))(@reflect-ui/font-utils@0.0.5)(axios@0.21.4)
       '@design-sdk/figma-node':
         specifier: ^0.0.53
         version: 0.0.53(@design-sdk/figma-core@0.0.53)(@reflect-ui/cg@0.1.1)(@reflect-ui/core@0.0.5(@reflect-ui/cg@0.1.1))(@reflect-ui/font-utils@0.0.5)(@reflect-ui/uiutils@0.1.2-2)
@@ -268,6 +271,9 @@ importers:
       '@design-sdk/figma-remote-api':
         specifier: ^0.0.53
         version: 0.0.53(axios@0.21.4)
+      '@design-sdk/figma-types':
+        specifier: ^0.0.53
+        version: 0.0.53
       '@design-sdk/figma-utils':
         specifier: ^0.0.53
         version: 0.0.53
@@ -275,6 +281,9 @@ importers:
       '@design-sdk/figma-remote-types':
         specifier: ^0.0.53
         version: 0.0.53
+      axios:
+        specifier: ^0.21.1
+        version: 0.21.4
       vitest:
         specifier: ^1.2.0
         version: 1.6.1(@types/node@20.19.27)
@@ -348,7 +357,14 @@ importers:
 
   sketch: {}
 
-  sketch-node-conversion: {}
+  sketch-node-conversion:
+    dependencies:
+      '@design-sdk/sketch-types':
+        specifier: ^0.0.53
+        version: 0.0.53
+      '@reflect-ui/core':
+        specifier: ^0.0.5
+        version: 0.0.5(@reflect-ui/cg@0.1.1)
 
   sketch-types: {}
 
@@ -365,7 +381,7 @@ importers:
         version: 0.0.53
       '@design-sdk/vanilla':
         specifier: ^0.0.53
-        version: 0.0.53(@design-sdk/core@0.0.53(@design-sdk/figma-core@0.0.53)(@reflect-ui/cg@0.1.1)(@reflect-ui/font-utils@0.0.5)(@reflect-ui/uiutils@0.1.2-2)(axios@0.21.4))(@design-sdk/figma-node@0.0.53(@design-sdk/figma-core@0.0.53)(@reflect-ui/cg@0.1.1)(@reflect-ui/core@0.0.5(@reflect-ui/cg@0.1.1))(@reflect-ui/font-utils@0.0.5)(@reflect-ui/uiutils@0.1.2-2))
+        version: 0.0.53(@design-sdk/core@0.0.53(@design-sdk/figma-core@0.0.53)(@reflect-ui/cg@0.1.1)(@reflect-ui/font-utils@0.0.5)(@reflect-ui/uiutils@0.1.2-2))(@design-sdk/figma-node@0.0.53(@design-sdk/figma-core@0.0.53)(@reflect-ui/cg@0.1.1)(@reflect-ui/core@0.0.5(@reflect-ui/cg@0.1.1))(@reflect-ui/font-utils@0.0.5)(@reflect-ui/uiutils@0.1.2-2))
 
   url-analysis:
     devDependencies:
@@ -375,6 +391,9 @@ importers:
 
   vanilla:
     dependencies:
+      '@base-sdk/base':
+        specifier: 0.1.4
+        version: 0.1.4(@reflect-ui/core@0.0.5(@reflect-ui/cg@0.1.1))(axios@0.21.4)
       '@design-sdk/asset-repository':
         specifier: ^0.0.53
         version: 0.0.53
@@ -384,6 +403,9 @@ importers:
       '@design-sdk/figma-node':
         specifier: '*'
         version: 0.0.53(@design-sdk/figma-core@0.0.53)(@reflect-ui/cg@0.1.1)(@reflect-ui/core@0.0.5(@reflect-ui/cg@0.1.1))(@reflect-ui/font-utils@0.0.5)(@reflect-ui/uiutils@0.1.2-2)
+      '@reflect-ui/core':
+        specifier: ^0.0.5
+        version: 0.0.5(@reflect-ui/cg@0.1.1)
 
 packages:
 
@@ -601,6 +623,9 @@ packages:
 
   '@design-sdk/flags@0.0.53':
     resolution: {integrity: sha512-WpHHO3LBFeYNbP5o9dLZv7qo0l0rHFF3fu6DGR1/rp8py44f29NYr8GJQhfkUni/PAJfjFsGZEVi9RXVypVveQ==}
+
+  '@design-sdk/sketch-types@0.0.53':
+    resolution: {integrity: sha512-xbbLksejE8UI5OWHP+/NLdtkFUhc1QR7g7VBODNNbAxY7Mw1T1bbt6A6YvIXCVne7AAkSeDlcBbP3GY3mnDG+w==}
 
   '@design-sdk/sketch@0.0.53':
     resolution: {integrity: sha512-2Lw3uDxvTObhxVrppKQLzAvxuMRIVykDA7wUqq1MTfsOVMhbgE83MYy91tqA9an2vViYWqVSG0n7YSUmCdyi/w==}
@@ -2789,9 +2814,11 @@ snapshots:
     dependencies:
       '@design-sdk/core-flags-dashdash': 0.0.53
 
+  '@design-sdk/sketch-types@0.0.53': {}
+
   '@design-sdk/sketch@0.0.53': {}
 
-  '@design-sdk/vanilla@0.0.53(@design-sdk/core@0.0.53(@design-sdk/figma-core@0.0.53)(@reflect-ui/cg@0.1.1)(@reflect-ui/font-utils@0.0.5)(@reflect-ui/uiutils@0.1.2-2)(axios@0.21.4))(@design-sdk/figma-node@0.0.53(@design-sdk/figma-core@0.0.53)(@reflect-ui/cg@0.1.1)(@reflect-ui/core@0.0.5(@reflect-ui/cg@0.1.1))(@reflect-ui/font-utils@0.0.5)(@reflect-ui/uiutils@0.1.2-2))':
+  '@design-sdk/vanilla@0.0.53(@design-sdk/core@0.0.53(@design-sdk/figma-core@0.0.53)(@reflect-ui/cg@0.1.1)(@reflect-ui/font-utils@0.0.5)(@reflect-ui/uiutils@0.1.2-2))(@design-sdk/figma-node@0.0.53(@design-sdk/figma-core@0.0.53)(@reflect-ui/cg@0.1.1)(@reflect-ui/core@0.0.5(@reflect-ui/cg@0.1.1))(@reflect-ui/font-utils@0.0.5)(@reflect-ui/uiutils@0.1.2-2))':
     dependencies:
       '@design-sdk/asset-repository': 0.0.53
       '@design-sdk/core': 0.0.53(@design-sdk/figma-core@0.0.53)(@reflect-ui/cg@0.1.1)(@reflect-ui/font-utils@0.0.5)(@reflect-ui/uiutils@0.1.2-2)(axios@0.21.4)

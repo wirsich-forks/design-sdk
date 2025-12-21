@@ -31,13 +31,16 @@
   },
   "dependencies": {
     "@design-sdk/asset-repository": "^0.0.53",
+    "@design-sdk/figma": "^0.0.53",
     "@design-sdk/figma-node": "^0.0.53",
     "@design-sdk/figma-node-conversion": "^0.0.53",
     "@design-sdk/figma-remote-api": "^0.0.53",
+    "@design-sdk/figma-types": "^0.0.53",
     "@design-sdk/figma-utils": "^0.0.53"
   },
   "devDependencies": {
     "@design-sdk/figma-remote-types": "^0.0.53",
+    "axios": "^0.21.1",
     "vitest": "^1.2.0"
   },
   "files": [
