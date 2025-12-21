@@ -27,7 +27,8 @@
     "@design-sdk/flags": "^0.0.53",
     "@reflect-ui/cg": "^0.0.5",
     "@reflect-ui/core": "^0.0.5",
-    "@reflect-ui/font-utils": "^0.0.5"
+    "@reflect-ui/font-utils": "^0.0.5",
+    "@reflect-ui/uiutils": "^0.1.2-2"
   },
   "peerDependencies": {
     "@design-sdk/figma-core": "^0.0.23"

@@ -1,10 +1,6 @@
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {
-    "outDir": "./dist",
-    "declarationDir": "./dist",
     "downlevelIteration": true
-  },
-  "include": ["./lib/**/*"],
-  "exclude": ["node_modules", "dist", "__test__"]
+  }
 }
