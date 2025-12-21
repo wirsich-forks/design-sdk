@@ -23,6 +23,9 @@
     "@design-sdk/core": "workspace:*",
     "@design-sdk/figma-node": "workspace:*"
   },
+  "devDependencies": {
+    "@design-sdk/figma-node": "workspace:*"
+  },
   "files": [
     "dist",
     "README",

@@ -389,12 +389,13 @@ importers:
       '@design-sdk/core':
         specifier: workspace:*
         version: link:../core
-      '@design-sdk/figma-node':
-        specifier: workspace:*
-        version: link:../figma-reflect-node
       '@reflect-ui/core':
         specifier: ^0.0.5
         version: 0.0.5(@reflect-ui/cg@0.1.1)
+    devDependencies:
+      '@design-sdk/figma-node':
+        specifier: workspace:*
+        version: link:../figma-reflect-node
 
 packages:
 
