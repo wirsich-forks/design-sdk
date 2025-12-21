@@ -6,6 +6,7 @@
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
+    "clean": "rimraf dist",
     "build": "exit 0",
     "typecheck": "echo 'no typescript sources' && exit 0"
   },

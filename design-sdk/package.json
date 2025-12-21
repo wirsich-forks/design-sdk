@@ -3,6 +3,7 @@
   "version": "0.0.33",
   "private": false,
   "scripts": {
+    "clean": "rimraf dist",
     "dev": "tsup --watch",
     "build": "tsup lib/index.ts",
     "typecheck": "tsc --noEmit"

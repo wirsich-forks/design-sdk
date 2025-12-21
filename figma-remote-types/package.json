@@ -20,6 +20,7 @@
   "authors": "Grida.co",
   "license": "MIT",
   "scripts": {
+    "clean": "rimraf dist",
     "build": "echo 'this package does not require build' && exit 0",
     "typecheck": "echo 'no typescript sources' && exit 0"
   },

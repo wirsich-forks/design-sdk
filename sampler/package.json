@@ -4,6 +4,7 @@
   "private": true,
   "license": "MIT",
   "scripts": {
+    "clean": "rimraf dist",
     "sample": "ts-node index.ts",
     "typecheck": "tsc --noEmit"
   },
