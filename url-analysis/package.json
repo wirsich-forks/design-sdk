@@ -16,7 +16,7 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@design-sdk/core-types": "^0.1.0"
+    "@design-sdk/core-types": "workspace:*"
   },
   "files": [
     "dist",

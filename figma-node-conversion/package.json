@@ -21,17 +21,17 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@design-sdk/figma-node": "^1.0.0",
-    "@design-sdk/figma-types": "^0.1.0",
-    "@design-sdk/figma-utils": "^0.1.0",
-    "@design-sdk/flags": "^0.1.0",
+    "@design-sdk/figma-node": "workspace:*",
+    "@design-sdk/figma-types": "workspace:*",
+    "@design-sdk/figma-utils": "workspace:*",
+    "@design-sdk/flags": "workspace:*",
     "@reflect-ui/cg": "^0.0.5",
     "@reflect-ui/core": "^0.0.5",
     "@reflect-ui/font-utils": "^0.0.5",
     "@reflect-ui/uiutils": "^0.1.2-2"
   },
   "peerDependencies": {
-    "@design-sdk/figma-core": "^0.1.0"
+    "@design-sdk/figma-core": "workspace:*"
   },
   "files": [
     "dist",

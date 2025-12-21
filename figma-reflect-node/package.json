@@ -20,13 +20,13 @@
     "LICENSE"
   ],
   "dependencies": {
-    "@design-sdk/figma-core": "^0.1.0",
-    "@design-sdk/figma-types": "^0.1.0",
-    "@design-sdk/figma-utils": "^0.1.0",
+    "@design-sdk/figma-core": "workspace:*",
+    "@design-sdk/figma-types": "workspace:*",
+    "@design-sdk/figma-utils": "workspace:*",
     "@reflect-ui/font-utils": "^0.0.1"
   },
   "peerDependencies": {
-    "@design-sdk/figma-core": "0.1.0",
+    "@design-sdk/figma-core": "workspace:*",
     "@reflect-ui/cg": "^0.1.1",
     "@reflect-ui/core": "^0.0.5",
     "@reflect-ui/font-utils": "^0.0.1",

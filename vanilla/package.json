@@ -16,12 +16,12 @@
   },
   "dependencies": {
     "@base-sdk/base": "0.1.4",
-    "@design-sdk/asset-repository": "^0.1.0",
+    "@design-sdk/asset-repository": "workspace:*",
     "@reflect-ui/core": "^0.0.5"
   },
   "peerDependencies": {
-    "@design-sdk/core": "*",
-    "@design-sdk/figma-node": "*"
+    "@design-sdk/core": "workspace:*",
+    "@design-sdk/figma-node": "workspace:*"
   },
   "files": [
     "dist",

@@ -12,12 +12,12 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@design-sdk/asset-repository": "^0.1.0",
-    "@design-sdk/figma-node": "^1.0.0",
-    "@design-sdk/figma-node-conversion": "^1.0.0",
-    "@design-sdk/figma-remote": "^0.1.0",
-    "@design-sdk/figma-types": "^0.1.0",
-    "@design-sdk/figma-url": "^0.1.0",
+    "@design-sdk/asset-repository": "workspace:*",
+    "@design-sdk/figma-node": "workspace:*",
+    "@design-sdk/figma-node-conversion": "workspace:*",
+    "@design-sdk/figma-remote": "workspace:*",
+    "@design-sdk/figma-types": "workspace:*",
+    "@design-sdk/figma-url": "workspace:*",
     "@reflect-ui/core": "^0.0.5",
     "@reflect-ui/namings": "^0.0.3",
     "@reflect-ui/uiutils": "0.1.2-1"

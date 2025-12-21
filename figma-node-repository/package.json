@@ -12,8 +12,8 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@design-sdk/figma-node": "^1.0.0",
-    "@design-sdk/figma-types": "^0.1.0"
+    "@design-sdk/figma-node": "workspace:*",
+    "@design-sdk/figma-types": "workspace:*"
   },
   "files": [
     "dist",

@@ -30,16 +30,16 @@
     }
   },
   "dependencies": {
-    "@design-sdk/asset-repository": "^0.1.0",
-    "@design-sdk/figma": "^0.1.0",
-    "@design-sdk/figma-node": "^1.0.0",
-    "@design-sdk/figma-node-conversion": "^1.0.0",
-    "@design-sdk/figma-remote-api": "^0.1.0",
-    "@design-sdk/figma-types": "^0.1.0",
-    "@design-sdk/figma-utils": "^0.1.0"
+    "@design-sdk/asset-repository": "workspace:*",
+    "@design-sdk/figma": "workspace:*",
+    "@design-sdk/figma-node": "workspace:*",
+    "@design-sdk/figma-node-conversion": "workspace:*",
+    "@design-sdk/figma-remote-api": "workspace:*",
+    "@design-sdk/figma-types": "workspace:*",
+    "@design-sdk/figma-utils": "workspace:*"
   },
   "devDependencies": {
-    "@design-sdk/figma-remote-types": "^0.1.0",
+    "@design-sdk/figma-remote-types": "workspace:*",
     "axios": "^0.21.1",
     "vitest": "^1.2.0"
   },

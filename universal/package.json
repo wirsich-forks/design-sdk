@@ -9,10 +9,10 @@
     "softmarshmallow <universe@grida.co>"
   ],
   "dependencies": {
-    "@design-sdk/core": "^0.1.0",
-    "@design-sdk/figma": "^0.1.0",
-    "@design-sdk/sketch": "^0.1.0",
-    "@design-sdk/vanilla": "^1.0.0"
+    "@design-sdk/core": "workspace:*",
+    "@design-sdk/figma": "workspace:*",
+    "@design-sdk/sketch": "workspace:*",
+    "@design-sdk/vanilla": "workspace:*"
   },
   "scripts": {
     "clean": "rimraf dist",

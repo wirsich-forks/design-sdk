@@ -9,7 +9,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@design-sdk/figma-remote": "^0.1.0",
+    "@design-sdk/figma-remote": "workspace:*",
     "dotenv": "^16.0.3",
     "yargs": "^17.6.2"
   },

@@ -9,11 +9,11 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@design-sdk/core": "0.0.33",
-    "@design-sdk/figma": "0.0.33",
-    "@design-sdk/diff": "0.0.33",
-    "@design-sdk/flags": "0.0.33",
-    "@design-sdk/vanilla": "0.0.33"
+    "@design-sdk/core": "workspace:*",
+    "@design-sdk/figma": "workspace:*",
+    "@design-sdk/diff": "workspace:*",
+    "@design-sdk/flags": "workspace:*",
+    "@design-sdk/vanilla": "workspace:*"
   },
   "files": [
     "dist",

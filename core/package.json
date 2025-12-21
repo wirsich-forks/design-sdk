@@ -28,10 +28,10 @@
   },
   "dependencies": {
     "@base-sdk/base": "0.1.4",
-    "@design-sdk/figma-node": "^1.0.0",
-    "@design-sdk/figma-types": "^0.1.0",
-    "@design-sdk/figma-utils": "^0.1.0",
-    "@design-sdk/flags": "^0.1.0",
+    "@design-sdk/figma-node": "workspace:*",
+    "@design-sdk/figma-types": "workspace:*",
+    "@design-sdk/figma-utils": "workspace:*",
+    "@design-sdk/flags": "workspace:*",
     "@reflect-ui/core": "0.0.5",
     "@reflect-ui/namings": "0.0.3",
     "@reflect-ui/uiutils": "^0.1.2-2"

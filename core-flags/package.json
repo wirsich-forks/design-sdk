@@ -27,7 +27,7 @@
     }
   },
   "dependencies": {
-    "@design-sdk/core-flags-dashdash": "^0.1.0"
+    "@design-sdk/core-flags-dashdash": "workspace:*"
   },
   "devDependencies": {
     "@types/assert": "^1.5.6",

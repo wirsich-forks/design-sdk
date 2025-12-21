@@ -30,7 +30,7 @@
     "axios": "^0.21.1"
   },
   "devDependencies": {
-    "@design-sdk/figma-remote-types": "^0.1.0",
+    "@design-sdk/figma-remote-types": "workspace:*",
     "dotenv": "^10.0.0",
     "vitest": "^1.2.0"
   },

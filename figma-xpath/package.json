@@ -17,7 +17,7 @@
     "softmarshmallow <universe@grida.co>"
   ],
   "devDependencies": {
-    "@design-sdk/figma-node": "^1.0.0"
+    "@design-sdk/figma-node": "workspace:*"
   },
   "files": [
     "dist",
