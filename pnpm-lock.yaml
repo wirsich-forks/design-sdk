@@ -48,8 +48,8 @@ importers:
         specifier: ^0.0.53
         version: 0.0.53
       '@design-sdk/flags':
-        specifier: ^0.0.17
-        version: 0.0.17
+        specifier: ^0.0.53
+        version: 0.0.53
       '@reflect-ui/core':
         specifier: 0.0.5
         version: 0.0.5(@reflect-ui/cg@0.1.1)
@@ -124,8 +124,8 @@ importers:
         specifier: ^0.0.53
         version: 0.0.53
       '@design-sdk/figma-url':
-        specifier: ^0.0.53
-        version: 0.0.53
+        specifier: ^0.0.54
+        version: 0.0.54
       '@reflect-ui/core':
         specifier: ^0.0.5
         version: 0.0.5(@reflect-ui/cg@0.1.1)
@@ -172,11 +172,11 @@ importers:
   figma-node-conversion:
     dependencies:
       '@design-sdk/figma-core':
-        specifier: ^0.0.23
-        version: 0.0.23
+        specifier: ^0.0.53
+        version: 0.0.53
       '@design-sdk/figma-node':
         specifier: ^0.0.53
-        version: 0.0.53(@design-sdk/figma-core@0.0.23)(@reflect-ui/cg@0.0.5)(@reflect-ui/core@0.0.5(@reflect-ui/cg@0.0.5))(@reflect-ui/font-utils@0.0.5)(@reflect-ui/uiutils@0.1.2-2)
+        version: 0.0.53(@design-sdk/figma-core@0.0.53)(@reflect-ui/cg@0.0.5)(@reflect-ui/core@0.0.5(@reflect-ui/cg@0.0.5))(@reflect-ui/font-utils@0.0.5)(@reflect-ui/uiutils@0.1.2-2)
       '@design-sdk/figma-types':
         specifier: ^0.0.53
         version: 0.0.53
@@ -336,8 +336,8 @@ importers:
   sampler:
     dependencies:
       '@design-sdk/figma-remote':
-        specifier: ^0.0.43
-        version: 0.0.43(@design-sdk/figma-core@0.0.53)(@design-sdk/figma-types@0.0.53)(@reflect-ui/cg@0.1.1)(@reflect-ui/core@0.0.5(@reflect-ui/cg@0.1.1))(@reflect-ui/font-utils@0.0.5)(@reflect-ui/uiutils@0.1.2-2)(axios@0.21.4)
+        specifier: ^0.0.53
+        version: 0.0.53(@design-sdk/figma-core@0.0.53)(@reflect-ui/cg@0.1.1)(@reflect-ui/core@0.0.5(@reflect-ui/cg@0.1.1))(@reflect-ui/font-utils@0.0.5)(@reflect-ui/uiutils@0.1.2-2)(axios@0.21.4)
       dotenv:
         specifier: ^16.0.3
         version: 16.6.1
@@ -519,14 +519,8 @@ packages:
     resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
     engines: {node: '>=12'}
 
-  '@design-sdk/asset-repository@0.0.43':
-    resolution: {integrity: sha512-m8cj+1rZbCo2aB3Br1B326XsNmkfV9/A8gDU++uFMlBv7iG3mZ6HYeRnWFhxAXPg8SJl4JzYFARsaWuE83vLxQ==}
-
   '@design-sdk/asset-repository@0.0.53':
     resolution: {integrity: sha512-dfnQiaaKxbuUIQeG5fRb945JqhtFz2Of+0lD4+yBiqh7OB5Ritgri0cA+REi1MZiqYe8etdclOi7Kr03Uz8b+A==}
-
-  '@design-sdk/core-flags-dashdash@0.0.43':
-    resolution: {integrity: sha512-eCQc6jggl3NTmM5QphW0yhHldsFNlZXYzH3Vg2SO6Qlv6EN71pjZqBrRRbQJPzLOgk/ITICq7bSor+lR2rSQlg==}
 
   '@design-sdk/core-flags-dashdash@0.0.53':
     resolution: {integrity: sha512-rYt7n2oMSZOC/zUcw/LvBM33+sI16LFOyoss2rQ4IO6MTgaWd3kG7DpRmoQjwpD5Feeky31/1jyaabUSCq+geQ==}
@@ -540,31 +534,13 @@ packages:
   '@design-sdk/figma-auth-store@0.0.53':
     resolution: {integrity: sha512-nypXIUwmMIjXGhoHFRGmBNCLSCTdltAlroPXQReZlmvRpLl90pEf1Cm7YqOIuLzANaWYPCqry4/TwISYqnV9Dg==}
 
-  '@design-sdk/figma-core@0.0.23':
-    resolution: {integrity: sha512-HnoXgrmdQzypPmQ3JSJgVRI1kSby8WgK62I0g1r3ie5NkZkcGVi/CFbPaae8xu/nPPsLXV+MMEJ3kE5bKO4I1g==}
-
   '@design-sdk/figma-core@0.0.53':
     resolution: {integrity: sha512-R43zZmQcajH0gD8snoGrBlLxvhMptdUZLME1ESDxuxPA3a2ZUSGHwyzOx4d6t/ZIjK0qAG84NT3uneL7fxqpZA==}
-
-  '@design-sdk/figma-node-conversion@0.0.43':
-    resolution: {integrity: sha512-RX1aC1yUKNpQ0m3am88fJ33jnm2CxzgyEgsclLN1ycF863zA265u0Radw25vDEpJjaxaBh0uLiMWo6vwjl9YeQ==}
-    peerDependencies:
-      '@design-sdk/figma-core': ^0.0.23
 
   '@design-sdk/figma-node-conversion@0.0.53':
     resolution: {integrity: sha512-/QqE/+FuOtyBVvcsNEAC9kaREWg33mSYJ7cEpDrAMOX+yuhOs8eMtSevj0S/cRwBVKi76vwT47hmykixpuilqA==}
     peerDependencies:
       '@design-sdk/figma-core': ^0.0.23
-
-  '@design-sdk/figma-node@0.0.43':
-    resolution: {integrity: sha512-Wo3jNL4S8NjqbwZZG4eXe2ut/HVM/vPGaEFoEa8MIJyTslwS+sobiU4TW2qDUYNVZW/L7fxYdHO+sBDQOx0TWw==}
-    peerDependencies:
-      '@design-sdk/figma-core': 0.0.23
-      '@design-sdk/figma-types': ^0.0.23
-      '@reflect-ui/cg': ^0.1.1
-      '@reflect-ui/core': ^0.0.5
-      '@reflect-ui/font-utils': ^0.0.1
-      '@reflect-ui/uiutils': ^0.1.2-2
 
   '@design-sdk/figma-node@0.0.53':
     resolution: {integrity: sha512-UNC3ByQHNlOmaGKWATFOKrmxxDXXrV/5Yr5dAYasllyaQ3qyPBHgppeDK8jIbYhQOOnI4nIZvn393AkV48zo+w==}
@@ -575,11 +551,6 @@ packages:
       '@reflect-ui/font-utils': ^0.0.1
       '@reflect-ui/uiutils': ^0.1.2-2
 
-  '@design-sdk/figma-remote-api@0.0.43':
-    resolution: {integrity: sha512-P23tmxi749yFl/YQnpepi1PWramXiYDQW4dJ+vWKS7bOdTI/BKCsypdI2oK5nL046QS0M11DgMWDh9BddhuDXw==}
-    peerDependencies:
-      axios: ^0.21.1
-
   '@design-sdk/figma-remote-api@0.0.53':
     resolution: {integrity: sha512-zY6ryeGBpnonlWW/g/0jlIvXpNIX26eo96Joel9DKmJkFv2wwjQLi61rj8dfmvgLaIdPIUPtO1/Xucg8PuCE0Q==}
     peerDependencies:
@@ -588,14 +559,8 @@ packages:
   '@design-sdk/figma-remote-types@0.0.53':
     resolution: {integrity: sha512-6ItsLnbDlQD3xyyn5tAdHk3WFo2JxQRjvPSmgSvXOnTupFKjyNgK5i51lc7LozdT7Kc5eibEKnx5PAarcR13Pg==}
 
-  '@design-sdk/figma-remote@0.0.43':
-    resolution: {integrity: sha512-1kSr38k34XHBtLZksiqDDv3OK+jaB/+Lgy/N8QF87RklFlvj7F+lZuN9Nw0JbAJ/uRojED5YpG5gh9wpw6jdFQ==}
-
   '@design-sdk/figma-remote@0.0.53':
     resolution: {integrity: sha512-DMFaYCuOtDMrHkbdHAXkdD/zH5kY/J6yYL0C+jmAfRvshiCsXUaBUkWpnBwPiuLAuTV9qYx0gOO5pKJlp5TxAQ==}
-
-  '@design-sdk/figma-types@0.0.43':
-    resolution: {integrity: sha512-v/NBwevEE6suNLtsx0FLxfgv/T1e9ivHxWXd+AEkq9KsgvWc/ods+D5T8rq79kAoRzZN4i1dSV3DYsviltY2rw==}
 
   '@design-sdk/figma-types@0.0.53':
     resolution: {integrity: sha512-tICaZtPdMorneTe1QI+bqBrwXAsYyZIcHj41MzqXXnSGO5d/kmMXmJ6tqBCMWfenV+mM6YLvwHJn5N+6YqmhNg==}
@@ -603,8 +568,8 @@ packages:
   '@design-sdk/figma-url@0.0.53':
     resolution: {integrity: sha512-qvNyf5ApxTqOrUVuHhHS0/xLieR08TQxIALroYNECxSFvIo8vrkJshRqFWureilgRwd2KdwkuBsxh+M+hbzLAw==}
 
-  '@design-sdk/figma-utils@0.0.43':
-    resolution: {integrity: sha512-A+Wu7nGFo1zfhXqVlQ5naAJmZYWh+9GlY0RQ3Cd9fU5Qn/TkKoFHucwOx7Yzw0GvUHNWWIxyLsox6Rkp2T87kQ==}
+  '@design-sdk/figma-url@0.0.54':
+    resolution: {integrity: sha512-x7KItEmmttfTMZOkDMyAJGSBtqjp8kKbqBNWeGOOIfliCyDwEaVQUse3VmnPCWrJyXQviOsuAOsb1D4sGwyHdA==}
 
   '@design-sdk/figma-utils@0.0.53':
     resolution: {integrity: sha512-WTBrClFjDNKOHLIwGdgEqwdV5Th6p6BuQ1sOcrqsKjJIWqFz+unZefVd5HMdkZ4kuDCpv1tagbqKQEAyMr666A==}
@@ -617,9 +582,6 @@ packages:
 
   '@design-sdk/flags@0.0.17':
     resolution: {integrity: sha512-GRb24/NmZwd/O4UZHoDeOTebd8uU+u/oF5+P9OvrPYgds7CeWHftYeuu/RtXMn3i5GBXiMYw1W2r6mRCj486KQ==}
-
-  '@design-sdk/flags@0.0.43':
-    resolution: {integrity: sha512-/ZNzHvy6/2Xa98AbyV6HZ6OaAUzxYh2pyGpN90RbWPC2q6IGinwC5bLZ/vIUf9p8FMUS5kBUch/ZEiGEbgdNKg==}
 
   '@design-sdk/flags@0.0.53':
     resolution: {integrity: sha512-WpHHO3LBFeYNbP5o9dLZv7qo0l0rHFF3fu6DGR1/rp8py44f29NYr8GJQhfkUni/PAJfjFsGZEVi9RXVypVveQ==}
@@ -2582,19 +2544,11 @@ snapshots:
     dependencies:
       '@jridgewell/trace-mapping': 0.3.9
 
-  '@design-sdk/asset-repository@0.0.43':
-    dependencies:
-      '@base-sdk/hosting': 0.1.2
-    transitivePeerDependencies:
-      - debug
-
   '@design-sdk/asset-repository@0.0.53':
     dependencies:
       '@base-sdk/hosting': 0.1.2
     transitivePeerDependencies:
       - debug
-
-  '@design-sdk/core-flags-dashdash@0.0.43': {}
 
   '@design-sdk/core-flags-dashdash@0.0.53': {}
 
@@ -2619,22 +2573,7 @@ snapshots:
 
   '@design-sdk/figma-auth-store@0.0.53': {}
 
-  '@design-sdk/figma-core@0.0.23': {}
-
   '@design-sdk/figma-core@0.0.53': {}
-
-  '@design-sdk/figma-node-conversion@0.0.43(@design-sdk/figma-core@0.0.53)(@reflect-ui/uiutils@0.1.2-2)':
-    dependencies:
-      '@design-sdk/figma-core': 0.0.53
-      '@design-sdk/figma-node': 0.0.43(@design-sdk/figma-core@0.0.53)(@design-sdk/figma-types@0.0.43)(@reflect-ui/cg@0.0.5)(@reflect-ui/core@0.0.5(@reflect-ui/cg@0.1.1))(@reflect-ui/font-utils@0.0.5)(@reflect-ui/uiutils@0.1.2-2)
-      '@design-sdk/figma-types': 0.0.43
-      '@design-sdk/figma-utils': 0.0.43
-      '@design-sdk/flags': 0.0.43
-      '@reflect-ui/cg': 0.0.5
-      '@reflect-ui/core': 0.0.5(@reflect-ui/cg@0.0.5)
-      '@reflect-ui/font-utils': 0.0.5
-    transitivePeerDependencies:
-      - '@reflect-ui/uiutils'
 
   '@design-sdk/figma-node-conversion@0.0.53(@design-sdk/figma-core@0.0.53)(@reflect-ui/uiutils@0.1.2-1)':
     dependencies:
@@ -2662,29 +2601,9 @@ snapshots:
     transitivePeerDependencies:
       - '@reflect-ui/uiutils'
 
-  '@design-sdk/figma-node@0.0.43(@design-sdk/figma-core@0.0.53)(@design-sdk/figma-types@0.0.43)(@reflect-ui/cg@0.0.5)(@reflect-ui/core@0.0.5(@reflect-ui/cg@0.1.1))(@reflect-ui/font-utils@0.0.5)(@reflect-ui/uiutils@0.1.2-2)':
+  '@design-sdk/figma-node@0.0.53(@design-sdk/figma-core@0.0.53)(@reflect-ui/cg@0.0.5)(@reflect-ui/core@0.0.5(@reflect-ui/cg@0.0.5))(@reflect-ui/font-utils@0.0.5)(@reflect-ui/uiutils@0.1.2-2)':
     dependencies:
       '@design-sdk/figma-core': 0.0.53
-      '@design-sdk/figma-types': 0.0.43
-      '@design-sdk/figma-utils': 0.0.43
-      '@reflect-ui/cg': 0.0.5
-      '@reflect-ui/core': 0.0.5(@reflect-ui/cg@0.1.1)
-      '@reflect-ui/font-utils': 0.0.5
-      '@reflect-ui/uiutils': 0.1.2-2
-
-  '@design-sdk/figma-node@0.0.43(@design-sdk/figma-core@0.0.53)(@design-sdk/figma-types@0.0.53)(@reflect-ui/cg@0.1.1)(@reflect-ui/core@0.0.5(@reflect-ui/cg@0.1.1))(@reflect-ui/font-utils@0.0.5)(@reflect-ui/uiutils@0.1.2-2)':
-    dependencies:
-      '@design-sdk/figma-core': 0.0.53
-      '@design-sdk/figma-types': 0.0.53
-      '@design-sdk/figma-utils': 0.0.43
-      '@reflect-ui/cg': 0.1.1
-      '@reflect-ui/core': 0.0.5(@reflect-ui/cg@0.1.1)
-      '@reflect-ui/font-utils': 0.0.5
-      '@reflect-ui/uiutils': 0.1.2-2
-
-  '@design-sdk/figma-node@0.0.53(@design-sdk/figma-core@0.0.23)(@reflect-ui/cg@0.0.5)(@reflect-ui/core@0.0.5(@reflect-ui/cg@0.0.5))(@reflect-ui/font-utils@0.0.5)(@reflect-ui/uiutils@0.1.2-2)':
-    dependencies:
-      '@design-sdk/figma-core': 0.0.23
       '@design-sdk/figma-types': 0.0.53
       '@design-sdk/figma-utils': 0.0.53
       '@reflect-ui/cg': 0.0.5
@@ -2732,32 +2651,11 @@ snapshots:
       '@reflect-ui/font-utils': 0.0.5
       '@reflect-ui/uiutils': 0.1.2-2
 
-  '@design-sdk/figma-remote-api@0.0.43(axios@0.21.4)':
-    dependencies:
-      axios: 0.21.4
-
   '@design-sdk/figma-remote-api@0.0.53(axios@0.21.4)':
     dependencies:
       axios: 0.21.4
 
   '@design-sdk/figma-remote-types@0.0.53': {}
-
-  '@design-sdk/figma-remote@0.0.43(@design-sdk/figma-core@0.0.53)(@design-sdk/figma-types@0.0.53)(@reflect-ui/cg@0.1.1)(@reflect-ui/core@0.0.5(@reflect-ui/cg@0.1.1))(@reflect-ui/font-utils@0.0.5)(@reflect-ui/uiutils@0.1.2-2)(axios@0.21.4)':
-    dependencies:
-      '@design-sdk/asset-repository': 0.0.43
-      '@design-sdk/figma-node': 0.0.43(@design-sdk/figma-core@0.0.53)(@design-sdk/figma-types@0.0.53)(@reflect-ui/cg@0.1.1)(@reflect-ui/core@0.0.5(@reflect-ui/cg@0.1.1))(@reflect-ui/font-utils@0.0.5)(@reflect-ui/uiutils@0.1.2-2)
-      '@design-sdk/figma-node-conversion': 0.0.43(@design-sdk/figma-core@0.0.53)(@reflect-ui/uiutils@0.1.2-2)
-      '@design-sdk/figma-remote-api': 0.0.43(axios@0.21.4)
-      '@design-sdk/figma-utils': 0.0.43
-    transitivePeerDependencies:
-      - '@design-sdk/figma-core'
-      - '@design-sdk/figma-types'
-      - '@reflect-ui/cg'
-      - '@reflect-ui/core'
-      - '@reflect-ui/font-utils'
-      - '@reflect-ui/uiutils'
-      - axios
-      - debug
 
   '@design-sdk/figma-remote@0.0.53(@design-sdk/figma-core@0.0.53)(@reflect-ui/cg@0.1.1)(@reflect-ui/core@0.0.5(@reflect-ui/cg@0.1.1))(@reflect-ui/font-utils@0.0.5)(@reflect-ui/uiutils@0.1.2-1)(axios@0.21.4)':
     dependencies:
@@ -2775,13 +2673,27 @@ snapshots:
       - axios
       - debug
 
-  '@design-sdk/figma-types@0.0.43': {}
+  '@design-sdk/figma-remote@0.0.53(@design-sdk/figma-core@0.0.53)(@reflect-ui/cg@0.1.1)(@reflect-ui/core@0.0.5(@reflect-ui/cg@0.1.1))(@reflect-ui/font-utils@0.0.5)(@reflect-ui/uiutils@0.1.2-2)(axios@0.21.4)':
+    dependencies:
+      '@design-sdk/asset-repository': 0.0.53
+      '@design-sdk/figma-node': 0.0.53(@design-sdk/figma-core@0.0.53)(@reflect-ui/cg@0.1.1)(@reflect-ui/core@0.0.5(@reflect-ui/cg@0.1.1))(@reflect-ui/font-utils@0.0.5)(@reflect-ui/uiutils@0.1.2-2)
+      '@design-sdk/figma-node-conversion': 0.0.53(@design-sdk/figma-core@0.0.53)(@reflect-ui/uiutils@0.1.2-2)
+      '@design-sdk/figma-remote-api': 0.0.53(axios@0.21.4)
+      '@design-sdk/figma-utils': 0.0.53
+    transitivePeerDependencies:
+      - '@design-sdk/figma-core'
+      - '@reflect-ui/cg'
+      - '@reflect-ui/core'
+      - '@reflect-ui/font-utils'
+      - '@reflect-ui/uiutils'
+      - axios
+      - debug
 
   '@design-sdk/figma-types@0.0.53': {}
 
   '@design-sdk/figma-url@0.0.53': {}
 
-  '@design-sdk/figma-utils@0.0.43': {}
+  '@design-sdk/figma-url@0.0.54': {}
 
   '@design-sdk/figma-utils@0.0.53': {}
 
@@ -2805,10 +2717,6 @@ snapshots:
       - debug
 
   '@design-sdk/flags@0.0.17': {}
-
-  '@design-sdk/flags@0.0.43':
-    dependencies:
-      '@design-sdk/core-flags-dashdash': 0.0.43
 
   '@design-sdk/flags@0.0.53':
     dependencies:

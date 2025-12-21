@@ -31,7 +31,7 @@
     "@reflect-ui/uiutils": "^0.1.2-2"
   },
   "peerDependencies": {
-    "@design-sdk/figma-core": "^0.0.23"
+    "@design-sdk/figma-core": "^0.0.53"
   },
   "files": [
     "dist",
