@@ -8,6 +8,10 @@
     "build": "exit 0",
     "typecheck": "echo 'no typescript sources' && exit 0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gridaco/figma-sdk"
+  },
   "publishConfig": {
     "access": "public"
   }

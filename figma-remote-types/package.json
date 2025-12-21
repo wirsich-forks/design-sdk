@@ -16,7 +16,10 @@
     "figma-types"
   ],
   "homepage": "https://github.com/gridaco/figma-sdk/",
-  "repository": "https://github.com/gridaco/figma-sdk/tree/main/figma-remote-api/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gridaco/figma-sdk"
+  },
   "authors": "Grida.co",
   "license": "MIT",
   "scripts": {

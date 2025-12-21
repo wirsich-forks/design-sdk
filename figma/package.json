@@ -26,6 +26,10 @@
     "README.md",
     "LICENSE"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gridaco/figma-sdk"
+  },
   "publishConfig": {
     "access": "public"
   }
