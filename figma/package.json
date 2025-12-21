@@ -18,6 +18,8 @@
     "@design-sdk/figma-remote": "^0.0.53",
     "@design-sdk/figma-types": "^0.0.53",
     "@design-sdk/figma-url": "^0.0.53",
+    "@reflect-ui/core": "^0.0.5",
+    "@reflect-ui/namings": "^0.0.3",
     "@reflect-ui/uiutils": "0.1.2-1"
   },
   "files": [

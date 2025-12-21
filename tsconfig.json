@@ -8,5 +8,5 @@
     "resolveJsonModule": true,
     "esModuleInterop": true
   },
-  "exclude": ["node_modules", "dist", "example", "doc", "__test__"]
+  "exclude": ["node_modules", "dist", "example", "doc", "**/__test__", "**/*.test.ts", "**/*.spec.ts"]
 }
